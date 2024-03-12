@@ -1,5 +1,6 @@
 pipeline {
-
+    agent any
+    }
     stages {
         stage('clone_project_A') {
             steps {
