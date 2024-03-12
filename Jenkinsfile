@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    
+    triggers {
+        pollSCM('* * * * *')
     }
     stages {
         stage('clone_project_A') {
