@@ -14,7 +14,7 @@ pipeline {
         stage('build_project_A') {
             steps {
                 echo 'build_projectA'
-                sh 'yum install maven -y'
+                sh 'apt install maven -y'
                 sh 'mvn -Dmaven.test.failure.ignore=true install'
             }
         } 
